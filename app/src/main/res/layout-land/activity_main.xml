@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.dhirajmehta.invitationcard.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/utopia"
+
+        />
+
+    <TextView
+        android:id="@+id/invites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIES GST invites you at"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:fontFamily="monospace"
+        android:textColor="@android:color/widget_edittext_dark"
+        />
+
+    <TextView
+        android:layout_below="@id/invites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tatva Moksh Lakshya"
+        android:paddingTop="10dp"
+        android:textSize="50dp"
+        android:fontFamily="serif-monospace"
+        android:textStyle="bold"
+        android:textColor="#607D8B"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+        android:id="@+id/addr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="SIES\nGraduate School of Technology\nNerul,\nNavi Mumbai"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="15dp"/>
+
+    <TextView
+        android:id="@+id/venue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/addr"
+        android:layout_alignStart="@+id/addr"
+        android:text="Venue"
+        android:fontFamily="monospace"
+        android:textSize="25dp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/addr"
+        android:layout_alignStart="@+id/date_content"
+        android:text="Date"
+        android:fontFamily="monospace"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/date_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/date"
+        android:layout_marginEnd="11dp"
+        android:textSize="20dp"
+        android:text="9 , 10 , 11 \nMarch\n2018" />
+
+</RelativeLayout>
